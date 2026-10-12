@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>HTML5 Form Features</title>
+
+</head>
+
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form action="/register" method="post">
+
+        <!-- ================================= -->
+        <!-- 1. EMAIL -->
+        <!-- ================================= -->
+
+        <label for="email">
+            Email:
+        </label>
+
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="student@example.com"
+               required>
+
+        <br><br>
+
+
+        <!-- ================================= -->
+        <!-- 2. NUMBER -->
+        <!-- ================================= -->
+
+        <label for="age">
+            Age:
+        </label>
+
+        <input type="number"
+               id="age"
+               name="age"
+               min="18"
+               max="60"
+               required>
+
+        <br><br>
+
+
+        <!-- ================================= -->
+        <!-- 3. DATE -->
+        <!-- ================================= -->
+
+        <label for="dob">
+            Date of Birth:
+        </label>
+
+        <input type="date"
+               id="dob"
+               name="dob"
+               required>
+
+        <br><br>
+
+
+        <!-- ================================= -->
+        <!-- 4. URL -->
+        <!-- ================================= -->
+
+        <label for="github">
+            GitHub Profile:
+        </label>
+
+        <input type="url"
+               id="github"
+               name="github"
+               placeholder="https://github.com/username"
+               required>
+
+        <br><br>
+
+
+        <!-- ================================= -->
+        <!-- 5. MINLENGTH / MAXLENGTH -->
+        <!-- ================================= -->
+
+        <label for="username">
+            Username:
+        </label>
+
+        <input type="text"
+               id="username"
+               name="username"
+               minlength="5"
+               maxlength="15"
+               required>
+
+        <br>
+
+        <small>
+            Username must contain 5 to 15 characters.
+        </small>
+
+        <br><br>
+
+
+        <!-- ================================= -->
+        <!-- 6. PATTERN -->
+        <!-- ================================= -->
+
+        <label for="mobile">
+            Mobile Number:
+        </label>
+
+        <input type="tel"
+               id="mobile"
+               name="mobile"
+               pattern="[0-9]{10}"
+               placeholder="9876543210"
+               required>
+
+        <br>
+
+        <small>
+            Enter exactly 10 digits.
+        </small>
+
+        <br><br>
+
+
+        <!-- ================================= -->
+        <!-- 7. DATALIST -->
+        <!-- ================================= -->
+
+        <label for="course">
+            Course:
+        </label>
+
+        <select id="courses">
+		
+			<option value="">---Select option---</option>
+
+            <option value="Java Full Stack">Java Full Stack </option>
+
+            <option value="MERN Stack">MERN Stack </option>
+
+            <option value="Python Full Stack">Python Full Stack </option>
+
+            <option value="Data Science">Data Science</option>
+
+            <option value="Cloud Computing">Cloud Computing</option>
+
+        </select>
+
+        <br><br>
+
+
+        <!-- ================================= -->
+        <!-- 8. OUTPUT -->
+        <!-- ================================= -->
+
+        <label for="marks">
+            Marks:
+        </label>
+
+        <input type="number"
+               id="marks"
+               name="marks"
+               min="0"
+               max="100"
+               value="0"
+               oninput="percentage.value = marks.value">
+
+        <br><br>
+
+        <label>
+            Percentage:
+        </label>
+
+        <output id="percentage">
+            0
+        </output>
+
+        %
+
+        <br><br>
+
+
+        <!-- ================================= -->
+        <!-- 9. PROGRESS -->
+        <!-- ================================= -->
+
+        <label>
+            Registration Progress:
+        </label>
+
+        <br>
+
+        <progress value="70"
+                  max="100">
+        </progress>
+
+        70%
+
+        <br><br>
+
+
+        <!-- ================================= -->
+        <!-- 10. METER -->
+        <!-- ================================= -->
+
+        <label>
+            Profile Completion:
+        </label>
+
+        <br>
+
+        <meter value="8"
+               min="0"
+               max="10">
+        </meter>
+
+        8 / 10
+
+        <br><br>
+
+
+        <!-- ================================= -->
+        <!-- SUBMIT -->
+        <!-- ================================= -->
+
+        <button type="submit">
+            Register Student
+        </button>
+
+        <button type="reset">
+            Reset
+        </button>
+
+    </form>
+
+</body>
+
+</html>

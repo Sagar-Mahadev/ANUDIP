@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Image, Audio and Video</title>
+</head>
+
+<body>
+
+    <h1>Image, Audio and Video</h1>
+
+    <hr>
+ <!-- ================= IMAGE ================= -->
+
+    <h2>1. Image</h2>
+
+    <p>Example of an image using the &lt;img&gt; tag:</p>
+
+    <img
+        src="https://images.unsplash.com/photo-1497366754035-f200968a6e72"
+        alt="Modern Office"
+        width="500"
+        height="300"
+        title="Modern Office"
+        
+    >
+
+    <p>
+        The above image demonstrates the use of:
+        <b>src</b>, <b>alt</b>, <b>width</b>, <b>height</b>,
+        <b>title</b> and <b>loading</b> attributes.
+    </p>
+
+    <hr>
+
+    <!-- ================= AUDIO ================= -->
+
+    <h2>5. Audio</h2>
+
+    <p>Example of the &lt;audio&gt; tag:</p>
+
+    <audio controls>
+        <source
+            src="https://www.w3schools.com/html/horse.ogg"
+            type="audio/ogg">
+
+        <source
+            src="https://www.w3schools.com/html/horse.mp3"
+            type="audio/mpeg">
+
+        Your browser does not support the audio element.
+    </audio>
+
+    <p>
+        Audio attributes demonstrated:
+        <b>controls</b>
+    </p>
+
+    <h3>Audio with Multiple Attributes</h3>
+
+    <audio controls loop muted >
+        <source
+            src="https://www.w3schools.com/html/horse.mp3"
+            type="audio/mpeg">
+
+        Your browser does not support the audio element.
+    </audio>
+
+    <hr>
+
+    <!-- ================= VIDEO ================= -->
+
+    <h2>6. Video</h2>
+
+    <p>Example of the &lt;video&gt; tag:</p>
+
+    <video
+        width="600"
+        height="350"
+        controls
+        poster="https://images.unsplash.com/photo-1497366754035-f200968a6e72">
+
+        <source
+            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            type="video/mp4">
+
+        Your browser does not support the video tag.
+
+    </video>
+
+    <p>
+        Video attributes demonstrated:
+        <b>width</b>, <b>height</b>, <b>controls</b> and <b>poster</b>.
+    </p>
+
+    <h3>Video with Multiple Attributes</h3>
+
+    <video
+        width="600"
+        controls
+        autoplay
+        muted
+        loop
+        >
+
+        <source
+            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            type="video/mp4">
+
+        Your browser does not support the video element.
+
+    </video>
+
+    <hr>
+
+
+</body>
+
+</html>

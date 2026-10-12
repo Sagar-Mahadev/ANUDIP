@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Working on Forms</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f1f5f9;
+        text-align: center;
+      }
+
+      form {
+        width: 320px;
+        background-color: #ffffff;
+        border: 1px solid #d5e1eb;
+        border-radius: 10px;
+        padding: 25px;
+        margin: 100px auto;
+      }
+
+      h2 {
+        color: #334e68;
+      }
+
+      p {
+        color: #627d98;
+      }
+
+      label {
+        color: #334e68;
+      }
+
+      input {
+        width: 280px;
+        padding: 10px;
+        border: 1px solid #cbd5e1;
+        border-radius: 5px;
+        background-color: #f8fafc;
+      }
+
+      button {
+        background-color: #5b8e9b;
+        color: white;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="start.html" method="get">
+      <h2>Login Form</h2>
+      <p>Welcome back! Please log in.</p>
+
+      <label for="email">Email ID</label>
+      <br /><br />
+
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example@gmail.com"
+        required
+      />
+
+      <br /><br />
+
+      <label for="password">Password</label>
+      <br /><br />
+
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+        required
+      />
+
+      <br /><br />
+
+      <button type="submit">Login</button>
+    </form>
+  </body>
+</html>

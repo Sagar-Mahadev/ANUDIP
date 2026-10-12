@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>School Registration Form</title>
+</head>
+
+<body>
+
+        
+        <h1>Student Registration Form</h1>
+
+        <hr>
+<!-- Logout Button -->
+<div align="right">
+    <a href="form.html">
+        <button type="button">Logout</button>
+    </a>
+</div>
+
+    <!-- Registration Form -->
+    
+
+        <form action="" method="post">
+
+            <!-- ================= PERSONAL INFORMATION ================= -->
+
+            <fieldset>
+
+                <legend>
+                    <strong>1.Personal Information</strong>
+                </legend> <br>
+
+                
+                    <label for="firstName">First Name: *</label>
+                    <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        placeholder="Enter first name"
+                        required
+                        maxlength="30"><br><br>
+                
+
+                
+                    <label for="middleName">Middle Name:</label>
+                    <input
+                        type="text"
+                        id="middleName"
+                        name="middleName"
+                        placeholder="Enter middle name"
+                        maxlength="30"><br><br>
+                
+
+                
+                    <label for="lastName">Last Name: *</label>
+                    <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        placeholder="Enter last name"
+                        required
+                        maxlength="30"
+                        autocomplete="family-name"><br><br>
+               
+
+                
+                    <label for="dob">Date of Birth: *</label>
+                    <input
+                        type="date"
+                        id="dob"
+                        name="dob"
+                        required
+                        min="2005-01-01"
+                        max="2026-12-31"><br><br>
+                
+
+                
+                    <label>Gender: *</label>
+
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label> <br><br>
+                
+
+                
+                    <label for="bloodGroup">Blood Group:</label>
+
+                    <select id="bloodGroup" name="bloodGroup">
+                        <option value="">-- Select Blood Group --</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select> <br><br>
+                
+
+               
+                    <label for="nationality">Nationality:</label>
+                    <input
+                        type="text"
+                        id="nationality"
+                        name="nationality"
+                        value="Indian"
+                        readonly> <br>
+                
+
+            </fieldset>
+
+            <br>
+
+            <!-- ================= CONTACT INFORMATION ================= -->
+
+            <fieldset>
+
+                <legend>
+                    <strong>2.Contact Information</strong>
+                </legend><br>
+
+                
+                    <label for="email">Email Address: *</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="student@example.com"
+                        required
+                        autocomplete="email"><br><br>
+                
+
+                
+                    <label for="phone">Mobile Number: *</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter 10 digit mobile number"
+                        pattern="[0-9]{10}"
+                        maxlength="10"
+                        required> <br><br>
+                
+
+                
+                    <label for="alternatePhone">Alternate Phone:</label>
+                    <input
+                        type="tel"
+                        id="alternatePhone"
+                        name="alternatePhone"
+                        placeholder="Enter alternate number"
+                        pattern="[0-9]{10}"
+                        maxlength="10"><br><br>
+                
+
+            </fieldset>
+
+            <br>
+
+            <!-- ================= ADDRESS ================= -->
+
+            <fieldset>
+
+                <legend>
+                    <strong>3.Address Details</strong>
+                </legend><br>
+
+               
+                    <label for="address">Full Address: *</label><br>
+
+                    <textarea
+                        id="address"
+                        name="address"
+                        rows="4"
+                        cols="50"
+                        placeholder="Enter your complete address"
+                        required></textarea><br><br>
+                
+
+                
+                    <label for="city">City: *</label>
+
+			<select id="city" name="city" required>
+
+    				<option value="">-- Select City --</option>
+    				<option value="Bengaluru">Bengaluru</option>
+    				<option value="Mysuru">Mysuru</option>
+    				<option value="Mangaluru">Mangaluru</option>
+    				<option value="Hubballi">Hubballi</option>
+    				<option value="Belagavi">Belagavi</option>
+    				<option value="Chennai">Chennai</option>
+    				<option value="Hyderabad">Hyderabad</option>
+    				<option value="Mumbai">Mumbai</option>
+
+			</select><br><br>
+                
+
+                
+                   <label for="state">State: *</label>
+
+			<select id="state" name="state" required>
+
+    				<option value="">-- Select State --</option>
+
+    				<option value="Karnataka">Karnataka</option>
+    				<option value="Tamil Nadu">Tamil Nadu</option>
+    				<option value="Kerala">Kerala</option>
+   				 <option value="Andhra Pradesh">Andhra Pradesh</option>
+  				  <option value="Telangana">Telangana</option>
+    				<option value="Maharashtra">Maharashtra</option>
+   				 <option value="Goa">Goa</option>
+    				<option value="Delhi">Delhi</option>
+
+			</select><br><br>
+                
+
+
+                    <label for="pincode">PIN Code: *</label>
+
+                    <input
+                        type="text"
+                        id="pincode"
+                        name="pincode"
+                        placeholder="Enter PIN code"
+                        pattern="[0-9]{6}"
+                        maxlength="6"
+                        required><br><br>
+               
+
+            </fieldset>
+
+            <br>
+
+            <!-- ================= PARENT INFORMATION ================= -->
+
+            <fieldset>
+
+                <legend>
+                    <strong>4.Parent / Guardian Information</strong>
+                </legend><br>
+
+                
+                    <label for="fatherName">Father's Name: *</label>
+
+                    <input
+                        type="text"
+                        id="fatherName"
+                        name="fatherName"
+                        placeholder="Enter father's name"
+                        required><br><br>
+                
+
+                    <label for="motherName">Mother's Name: *</label>
+
+                    <input
+                        type="text"
+                        id="motherName"
+                        name="motherName"
+                        placeholder="Enter mother's name"
+                        required><br><br>
+              
+
+               
+                    <label for="guardianName">Guardian's Name:</label>
+
+                    <input
+                        type="text"
+                        id="guardianName"
+                        name="guardianName"
+                        placeholder="Enter guardian's name"><br><br>
+                
+
+                
+                    <label for="parentEmail">Parent Email: *</label>
+
+                    <input
+                        type="email"
+                        id="parentEmail"
+                        name="parentEmail"
+                        placeholder="parent@example.com"
+                        required><br><br>
+               
+
+                
+                    <label for="parentPhone">Parent Mobile Number: *</label>
+
+                    <input
+                        type="tel"
+                        id="parentPhone"
+                        name="parentPhone"
+                        pattern="[0-9]{10}"
+                        maxlength="10"
+                        placeholder="Enter 10 digit number"
+                        required><br><br>
+                
+
+                
+
+            </fieldset>
+
+            <br>
+
+            <!-- ================= ACADEMIC INFORMATION ================= -->
+
+            <fieldset>
+
+                <legend>
+                    <strong>5.Academic Information</strong>
+                </legend>
+
+                
+                    <label for="class">Applying for Class: *</label>
+
+                    <select id="class" name="class" required>
+
+                        <option value="">-- Select Class --</option>
+                        <option value="1">Class 1</option>
+                        <option value="2">Class 2</option>
+                        <option value="3">Class 3</option>
+                        <option value="4">Class 4</option>
+                        <option value="5">Class 5</option>
+                        <option value="6">Class 6</option>
+                        <option value="7">Class 7</option>
+                        <option value="8">Class 8</option>
+                        <option value="9">Class 9</option>
+                        <option value="10">Class 10</option>
+
+                    </select><br><br>
+                
+
+                
+                    <label for="previousSchool">Previous School:</label>
+
+                    <input
+                        type="text"
+                        id="previousSchool"
+                        name="previousSchool"
+                        placeholder="Enter previous school name"><br><br>
+                
+
+                    <label for="percentage">Previous Percentage:</label>
+
+                    <input
+                        type="number"
+                        id="percentage"
+                        name="percentage"
+                        min="0"
+                        max="100"
+                        step="0.01"
+                        placeholder="0 - 100"><br><br>
+              
+
+
+            </fieldset>
+
+            <br>
+
+            <!-- ================= SUBJECTS ================= -->
+
+            <fieldset>
+
+                <legend>
+                    <strong>6. Preferred Subjects</strong>
+                </legend>
+
+                <p>Select the subjects you are interested in:</p>
+
+                <input
+                    type="checkbox"
+                    id="maths"
+                    name="subjects"
+                    value="Mathematics">
+                <label for="maths">Mathematics</label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="science"
+                    name="subjects"
+                    value="Science">
+                <label for="science">Science</label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="computer"
+                    name="subjects"
+                    value="Computer Science">
+                <label for="computer">Computer Science</label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="english"
+                    name="subjects"
+                    value="English">
+                <label for="english">English</label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="social"
+                    name="subjects"
+                    value="Social Science">
+                <label for="social">Social Science</label>
+
+            </fieldset>
+
+            <br>
+
+            <!-- ================= EXTRA ACTIVITIES ================= -->
+
+            <fieldset>
+
+                <legend>
+                    <strong>7. Extra-Curricular Activities</strong>
+                </legend>
+
+                             <label for="activityDescription">Tell us about your hobbies:</label>
+                    <br>
+
+                    <textarea
+                        id="activityDescription"
+                        name="activityDescription"
+                        rows="5"
+                        cols="50"
+                        maxlength="500"
+                        placeholder="Describe your hobbies and interests..."></textarea><br>
+                
+
+            </fieldset>
+
+            <br>
+
+            <!-- ================= DOCUMENT UPLOAD ================= -->
+
+            <fieldset>
+
+                <legend>
+                    <strong>8.Document Upload</strong>
+                </legend><br>
+
+                
+                    <label for="photo">Student Photograph: *</label>
+
+                    <input
+                        type="file"
+                        id="photo"
+                        name="photo"
+                        accept="image/png, image/jpeg"
+                        required><br>
+
+               
+            </fieldset>
+
+            <br>
+
+           
+            </fieldset>
+
+            <br>
+
+            <!-- ================= DECLARATION ================= -->
+
+            <fieldset>
+
+                <legend>
+                    <strong>11. Declaration</strong>
+                </legend>
+
+                <p>
+                    <input
+                        type="checkbox"
+                        id="declaration"
+                        name="declaration"
+                        value="accepted"
+                        required>
+
+                    <label for="declaration">
+                        I hereby declare that the information provided
+                        above is true and correct.
+                    </label>
+                </p>
+
+                <p>
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
+                        value="accepted"
+                        required>
+
+                    <label for="terms">
+                        I agree to the school's terms and conditions.
+                    </label>
+                </p>
+
+            </fieldset>
+
+            <br>
+
+            <!-- ================= BUTTONS ================= -->
+
+          
+
+                  		 <button type="submit">
+        			Save Student
+    				</button>
+
+                <input
+                    type="reset"
+                    value="Reset Form">
+
+
+
+		<button type="submit"
+            formaction="multiFormSub.html"
+            formmethod="get" >
+                    Save as Draft
+                </button>
+ 
+
+            
+        </form>
+
+
+    <hr>
+
+</body>
+
+</html>

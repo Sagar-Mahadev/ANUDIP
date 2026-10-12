@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ID vs Class Example</title>
+
+    <style>
+      /* ID selector */
+      #pageTitle {
+        color: blue;
+        text-align: center;
+      }
+
+      /* Class selector */
+      .highlight {
+        color: red;
+        font-weight: bold;
+      }
+
+      /* Class selector */
+      .box {
+        background-color: lightyellow;
+        border: 2px solid orange;
+        padding: 15px;
+        margin: 10px;
+      }
+
+      div {
+        color: green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="pageTitle">Student Registration</h1>
+
+    <div class="box">
+      <p class="highlight">Student Name: Shivaprasad</p>
+
+      <p class="highlight">Course: MERN_AI Full Stack</p>
+
+      <p>Duration: 3 Months</p>
+    </div>
+
+    <div class="box">
+      <p class="highlight">Student Name: Ravi</p>
+
+      <p class="highlight">Course: Java Backend</p>
+
+      <p>Duration: 4 Months</p>
+    </div>
+
+    <p id="pageTitle">Thanks you with Id</p>
+    <p class="highlight">Thanks you with class</p>
+    <p class="highlight" id="pageTitle">Thanks you with class and Id</p>
+    <div>
+      <p>By trainer</p>
+    </div>
+  </body>
+</html>

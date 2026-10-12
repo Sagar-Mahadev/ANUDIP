@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formmethod Example</title>
+</head>
+
+<body>
+
+    <h2>Student Search</h2>
+
+<form action="/student/save" method="post">
+
+    <label for="name">Student Name:</label>
+    <input type="text"
+           id="name"
+           name="name"
+           required>
+
+    <br><br>
+
+    <!-- Uses form's default action and method -->
+    <button type="submit">
+        Save Student
+    </button>
+
+    <!-- Changes both action AND method -->
+    <button type="submit"
+            formaction="/student/search"
+            formmethod="get">
+        Search Student
+    </button>
+
+    <!-- Another button with different action AND method -->
+    <button type="submit"
+            formaction="/student/delete"
+            formmethod="post">
+        Delete Student
+    </button>
+
+</form>
+
+</body>
+</html>
